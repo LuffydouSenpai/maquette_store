@@ -21,6 +21,10 @@
     font-weight: lighter;
 }
 
+#left{
+    display: none;
+}
+
 /* header */
 #logo {
     background-color: black;
@@ -30,6 +34,10 @@
     padding: 0.5rem;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
+}
+
+#logo a{
+    color: white;
 }
 
 #logo i {
@@ -86,12 +94,12 @@
 
 /* body */
 
-main p:first-child {
+#item {
     padding: 1rem 0;
     color: gray;
 }
 
-/* div article */
+/* section articles */
 #articles {
     width: 100%;
     display: flex;
@@ -115,7 +123,7 @@ main p:first-child {
 }
 
 .cards div:last-child {
-    padding: 0.5rem 0;
+    padding: 0.7rem 0;
 }
 
 .cards img {
@@ -131,31 +139,253 @@ main p:first-child {
     padding: 0.1rem;
 }
 
-/* div subscribe */
+/* section subscribe */
 
-#subscribe{
+#subscribe {
     background-color: black;
-    color: white; 
+    color: white;
 }
 
-#subscribeSide{
+#subscribeSide {
     width: 90%;
     margin: 0 auto;
 }
 
-#subscribeSide h2{
+#subscribeSide h2 {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     font-size: 2.3rem;
 }
 
-#subscribeSide p{
+#subscribeSide p {
     font-size: 1rem;
     width: 70%;
     padding-bottom: 1rem;
 }
 
-#subscribeSide form div:first-child input{
+#subscribeSide form div:first-child input {
     border: none;
     width: 100%;
+    padding: 1rem;
+    color: gray;
+    margin-bottom: 0.5rem;
+}
+
+#subscribeSide form div:last-child input {
+    border: none;
+    padding: 1rem;
+    background-color: red;
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* section Contact About Store */
+
+#contactAboutStore {
+    background-color: #C4C4C4;
+    color: gray;
+}
+
+#contactAboutStoreSide {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+
+}
+
+/* div contact */
+
+#contactAboutStoreSide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contactSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#contactSide h2 {
+    padding-top: 5rem;
+    font-size: 1.8rem;
+}
+
+#contactSide p {
+    padding: 1rem 0;
+}
+
+#contactSide form {
+    width: 100%;
+}
+
+#contactSide form div input {
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: gray;
+}
+
+#contactSide form div:last-child input {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* div About */
+
+#About, #contact{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+#About h2, #contact h2{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+#contact h3{
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    padding-top: 0;
+}
+
+#About a, #contact a{
+    color: black;
+}
+
+#About p, #contact p{
+    padding-bottom: 0.7rem;
+    font-size: 1rem;
+}
+
+#sociaux{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem ;
+}
+footer p{
+padding: 1rem;
+}
+
+@media screen and (min-width:576px){
+    
+#desktop{
+    display: flex;
+}
+
+#left{
+    display: inline;
+    width: 50%;
+}
+#leftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#leftSide h1{
+    padding-top: 1.5rem;
+    font-size: 1.7rem;
+    padding-bottom: 8rem;
+}
+
+#leftSide a{
+    text-decoration: none;
+    
+}
+
+#leftSide li{
+    list-style: none;
+    color: gray; 
+    font-size: 1rem;
+    padding-bottom: 2rem; 
+}
+
+#menuDesktop{
+    padding-bottom: 2rem;
+}
+
+    /* header */
+
+    #logo{
+        display: none;
+    }
+
+    #rightSide{
+        width: 90%;
+    }
+
+    #headerImg{
+        height: 80vh;
+        padding: 2rem;
+    }
+
+    #headerImg h3 {
+        font-size: 5rem;
+        font-weight: lighter;
+    }
+    
+    #headerImg p {
+       font-size: 2.8rem; 
+    }
+    
+    #headerImg button {
+        width: 18%;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    /* body */
+
+    /* section articles */
+
+    .cards{
+        width: 20%;
+    }
+
+    /* section subscribe */
+
+    #subscribeSide{
+        width: 97%;
+    }
+
+    /* section Contact About Store */
+
+    #contactAboutStoreSide{
+        display: flex;
+        color: black;
+        width: 96%;
+    }
+
+    #contactSide form div input{
+        margin-bottom: 1rem; 
+    }
+    
+    #contactSide{
+        width: 32%;
+    }
+
+    #About{
+        width: 40%;
+    }
+
+    #contact{
+        width: 28%;
+        text-align: left;
+    }
 }
